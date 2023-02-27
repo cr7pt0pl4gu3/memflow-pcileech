@@ -128,6 +128,7 @@ fn gen_leechcore<P: AsRef<Path>>(_target: &str, out_dir: P) {
     let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
 
     let bindings_src_path = manifest_dir.join("src").join("leechcore_linux.rs");
+    panic!("{bindings_src_path}");
 
     let bindings_dst_path = out_dir.as_ref().to_path_buf().join("leechcore.rs");
 
